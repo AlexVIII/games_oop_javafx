@@ -21,7 +21,7 @@ public class BishopBlackTest {
     public void testWayC1G5() {
         BishopBlack obj = new BishopBlack(Cell.C1);
         Object[] result = obj.way(Cell.G5);
-        Cell[] expected = new Cell[]{Cell.C1, Cell.D2, Cell.E3, Cell.F4};
+        Cell[] expected = new Cell[]{Cell.D2, Cell.E3, Cell.F4, Cell.G5};
         assertThat(expected, is(result));
     }
 

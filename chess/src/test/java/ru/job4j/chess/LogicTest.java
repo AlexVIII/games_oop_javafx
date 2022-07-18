@@ -4,6 +4,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import ru.job4j.chess.firuges.Cell;
 import ru.job4j.chess.firuges.black.BishopBlack;
+import ru.job4j.chess.firuges.black.RookBlack;
 
 public class LogicTest {
 
@@ -24,6 +25,7 @@ public class LogicTest {
     public void moveException3() throws OccupiedCellException, FigureNotFoundException {
         Logic logic = new Logic();
         logic.add(new BishopBlack(Cell.C1));
+        logic.add(new RookBlack(Cell.D2));
         logic.move(Cell.C1, Cell.H6);
     }
 }
